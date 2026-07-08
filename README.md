@@ -31,6 +31,7 @@ uv run python scripts/01_reversible_reaction.py   # outputs/ に PNG を保存
 | `notebooks/04_catalytic_vs_stoichiometric.ipynb` | 化学量論 `m+s→∅` vs 触媒 `m+s→s`。応答が閾値スイッチ / MM 的滴定に分岐 |
 | `notebooks/05_consumption_vs_recycling.ipynb` | 04 の批判的検算。速度を揃えると「触媒=graded」は崩れ、閾値の正体は sRNA 消費だと分かる |
 | `notebooks/06_hfq_robustness.ipynb` | **論文再現①** Adamson & Lim 2011。Hfq を陽に入れ、duplex 形成が Hfq に対し釣鐘状（不足／隔離）＋解離が窓を広げる |
+| `notebooks/07_hfq_setpoint.ipynb` | **論文再現②** Sagawa & Lim 2015。random-order 結合だと高 Hfq で逆に抑制（Hfq set-point）、compulsory-order なら単調飽和 |
 | `scripts/01_reversible_reaction.py`  | 01 のスクリプト版（ヘッドレスで図を保存・動作検証用） |
 | `scripts/02_srna_silencing.py`       | 02 のスクリプト版（応答曲線 + Fano ノイズ図を保存） |
 | `scripts/03_translation_readout.py`  | 03 のスクリプト版 |
