@@ -44,6 +44,7 @@ uv run python scripts/01_reversible_reaction.py   # outputs/ に PNG を保存
 | `scripts/03_translation_readout.py`  | 03 のスクリプト版 |
 | `scripts/04_catalytic_vs_stoichiometric.py` | 04 のスクリプト版 |
 | `scripts/05_consumption_vs_recycling.py` | 05 のスクリプト版 |
+| `solutions/` | 各 notebook 末尾の**練習問題の解答**（01–14、実行検証済み。詳細は [`solutions/README.md`](solutions/README.md)） |
 | `outputs/` | 生成物（`.gitignore` 済み。再現可能なので追跡しない） |
 
 ### 03 / 04 のポイント
