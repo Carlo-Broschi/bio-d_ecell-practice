@@ -30,8 +30,37 @@
 - ✅ = `nbconvert --execute` で実行・出力あり。⚠️ = 一部のみ実行（理由を本文に明記）。⛔ = 重い空間系のため非自動実行（公式コードは忠実に掲載、手元で実行可）。
 - 空間系（o11/o12）は `plotting.plot_world`/`plot_movie` などインタラクティブ可視化を使う。`uv run jupyter lab` から実行を。
 
-## 公式が用意している素材の全体像（参考）
+## チュートリアル（`tutorials/`）— 公式 Tutorials 全 10 本
 
-公式は「解くべき練習問題」ではなく、**チュートリアル（how-to, 10 本）と例題モデル（Examples, 14 本）とテストモデル（5 本）**を提供している。\
-本トラックは **Examples 14 本を全て**収録した。チュートリアル（Brief Tour / Build a Model / Rule-based / Spatial Gillespie / Spatiocyte 等）や\
-テストモデル（Birth-Death, Homodimerization, Reversible, MSD）も、同じ要領で追加できる。
+公式の how-to チュートリアルを実行可能な形で移植（すべて ✅ 実行済み）。
+
+| ノート | 公式 | 内容 |
+|---|---|---|
+| `tut01_brief_tour` | tutorial01 | 最短ワークフロー（1 モデルを ode/gillespie/meso で） |
+| `tut02_build_a_model` | tutorial02 | モデルの 4 通りの書き方（DSL/オブジェクト/ファクトリ/デコレータ） |
+| `tut03_initial_condition` | tutorial03 | World・add_molecules・volume・bind_to |
+| `tut04_run_a_simulation` | tutorial04 | Simulator・step/run・Factory パターン |
+| `tut05_log_and_visualize` | tutorial05 | Observer（記録）と可視化 |
+| `tut06_rate_law_odes` | tutorial06 | rate-law（MM・任意式）・Pyfunc 速度則 |
+| `tut07_rule_based` | tutorial07 | サイト/状態・ワイルドカード・expand |
+| `tut08_more_about_brief_tour` | tutorial08 | World/Simulator 分離・Real3 演算・ソルバ付替え |
+| `tut09_spatial_gillespie` | tutorial09 | meso 反応拡散・初期分離の効果（小規模で実行） |
+| `tut10_spatiocyte` | tutorial10 | Spatiocyte 単分子・軌跡・構造（小規模で実行） |
+
+## テストモデル（`tests/`）— 公式 Test models 全 5 本
+
+各ソルバの整合性検証用の最小モデル。ODE+Gillespie を実行、空間系（meso/spatiocyte/egfrd/bd）は忠実コードを参照掲載。
+
+| ノート | 公式 | 内容 |
+|---|---|---|
+| `t1_birth_death` | Birth-Death | 生成/死滅のみ。定常=birth/death |
+| `t2_homodimerization` | Homodimerization/Annihilation | A+A→∅。巨視的 kon vs 微視的 ka |
+| `t3_reversible` | Reversible | A+B⇌C（非拡散律速→全ソルバ一致） |
+| `t4_reversible_diffusion_limited` | Reversible (Diff-limited) | 拡散律速→ well-mixed と空間がずれる |
+| `t5_msd` | MSD | 単分子の平均二乗変位 = 6Dt（空間・コードのみ） |
+
+## 収録状況
+
+公式が提供する **チュートリアル 10 / 例題 14 / テスト 5 = 全て**を収録した（"練習問題(演習)"は公式に存在しない）。\
+空間・単分子で重いもの（o11/o12 MinDE、t5 MSD、各テストの spatiocyte/egfrd/bd 呼び出し）は\
+公式コードを忠実に掲載しつつ自動実行は避け、理由と実行方法を各ノートに明記している。

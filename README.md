@@ -50,7 +50,7 @@ uv run python scripts/01_reversible_reaction.py   # outputs/ に PNG を保存
 | `scripts/04_catalytic_vs_stoichiometric.py` | 04 のスクリプト版 |
 | `scripts/05_consumption_vs_recycling.py` | 05 のスクリプト版 |
 | `solutions/` | 各 notebook 末尾の**発展課題（自作）の解答**（01–14、実行検証済み。詳細は [`solutions/README.md`](solutions/README.md)） |
-| `official/` | **E-Cell4 公式チュートリアル/例題の移植**（出典リンクつき。自作の `notebooks/` とは別トラック。詳細は [`official/README.md`](official/README.md)） |
+| `official/` | **E-Cell4 公式の移植**（出典リンクつき・自作 `notebooks/` とは別トラック）。**例題14本 (`o1`–`o14`)＋チュートリアル10本 (`official/tutorials/`)＋テスト5本 (`official/tests/`)** ＝公式が提供する素材を網羅。詳細は [`official/README.md`](official/README.md) |
 | `outputs/` | 生成物（`.gitignore` 済み。再現可能なので追跡しない） |
 
 ### 03 / 04 のポイント
