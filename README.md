@@ -34,6 +34,7 @@ uv run python scripts/01_reversible_reaction.py   # outputs/ に PNG を保存
 | `notebooks/07_hfq_setpoint.ipynb` | **論文再現②** Sagawa & Lim 2015。random-order 結合だと高 Hfq で逆に抑制（Hfq set-point）、compulsory-order なら単調飽和 |
 | `notebooks/08_srna_competition.ipynb` | **論文再現③** Moon & Gottesman 2011。2 sRNA が Hfq を共有→競合者の過剰発現でレポーターsRNA抑制、Hfq追加で回復 |
 | `notebooks/09_partnered_vs_unpartnered.ipynb` | **論文再現④** Hussein & Lim 2011。unpartnered な sRNA/mRNA 単独は Hfq を抱え妨害、partnered（共転写）なら duplex で Hfq を返し妨害小 |
+| `notebooks/10_cotranscriptional.ipynb` | **論文再現⑤** Reyer 2021。実測パラメータで post-転写だけでは抑制が浅く、共転写制御(α_m→0.46α_m)を足すと実測の深い抑制に合う |
 | `scripts/01_reversible_reaction.py`  | 01 のスクリプト版（ヘッドレスで図を保存・動作検証用） |
 | `scripts/02_srna_silencing.py`       | 02 のスクリプト版（応答曲線 + Fano ノイズ図を保存） |
 | `scripts/03_translation_readout.py`  | 03 のスクリプト版 |
