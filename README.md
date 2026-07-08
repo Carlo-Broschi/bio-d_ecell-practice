@@ -26,8 +26,18 @@ uv run python scripts/01_reversible_reaction.py   # outputs/ に PNG を保存
 | パス | 内容 |
 |---|---|
 | `notebooks/01_getting_started.ipynb` | 可逆反応 A ⇌ B を ODE と Gillespie で解く最初の練習 |
-| `scripts/01_reversible_reaction.py`  | 上と同内容のスクリプト版（ヘッドレスで図を保存・動作検証用） |
+| `notebooks/02_srna_silencing.ipynb`  | Hfq 依存 sRNA による標的 mRNA 抑制の最小回路（`bio-a` と地続き） |
+| `scripts/01_reversible_reaction.py`  | 01 のスクリプト版（ヘッドレスで図を保存・動作検証用） |
+| `scripts/02_srna_silencing.py`       | 02 のスクリプト版（応答曲線 + Fano ノイズ図を保存） |
 | `outputs/` | 生成物（`.gitignore` 済み。再現可能なので追跡しない） |
+
+### 02 のポイント（研究との接点）
+
+sRNA サイレンシングの最小回路（∅→m, ∅→s, m→∅, s→∅, m+s→∅）。sRNA 転写率 `a_s` を掃引すると、
+`a_s > a_m` で標的 mRNA が閾値的に急落（*threshold-linear* 応答）し、その閾値近傍で Gillespie の
+ゆらぎ（Fano factor）が Poisson の 1 から ~3 へ増幅する。Hfq / sRNA の**進化**を扱う `bio-a` に対する
+「回路としての振る舞い」側の相棒。**掃引で毎回モデルを組み直すため、DSL ではなく `ReactionRule` の明示 API を使う**
+（`reaction_rules()` はグローバルモデルに累積するので掃引に不向き）。
 
 ## E-Cell4 の最小 API メモ
 
