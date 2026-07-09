@@ -1,4 +1,4 @@
-# bio-d: E-Cell4 practice
+# bio-x: E-Cell4 practice
 
 [E-Cell4](https://ecell4.e-cell.org/) を使った細胞シミュレーションの練習リポジトリ。
 決定論（ODE）と確率論（Gillespie）を中心に、反応ネットワークのモデル化を段階的に手を動かして学ぶ。
@@ -14,8 +14,8 @@
 - パッケージ管理は [`uv`](https://docs.astral.sh/uv/)
 
 ```bash
-git clone https://github.com/Carlo-Broschi/bio-d_ecell-practice.git
-cd bio-d_ecell-practice
+git clone https://github.com/Carlo-Broschi/bio-x_ecell-practice.git
+cd bio-x_ecell-practice
 uv sync                       # .venv を作成し依存を同期
 uv run jupyter lab            # Notebook で練習する場合
 ```

@@ -2,7 +2,7 @@
 
 各 notebook（`../notebooks/NN_*.ipynb`）末尾の「発展課題（自作）」を解いたもの。
 計算問題はコード＋図＋数値で解答し、`[[bio-a_hfq-phylogenetics]]` 接続の考察問題は
-文章で答えつつ、定量化は spin-off プロジェクト **bio-e** で行う旨を示している。
+文章で答えつつ、定量化は spin-off プロジェクト **bio-d** で行う旨を示している。
 
 すべて `uv run jupyter nbconvert --execute` で実行検証済み。
 
