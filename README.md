@@ -92,3 +92,13 @@ ret.plot()            # 組み込みプロット
 
 - E-Cell4 ドキュメント: https://ecell4.e-cell.org/
 - プロジェクトページ: https://www.e-cell.org/projects/ecell4.html
+
+## Author
+
+Minoru Nakai — Independent researcher
+
+## License
+
+MIT (see [`LICENSE`](LICENSE)) — covers this repository's original work
+(`notebooks/`, `scripts/`, `solutions/`). Material under `official/` is ported
+from the E-Cell4 project with attribution and retains its upstream terms.
